@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio</title>
-    <script>
-        let nome = 'Gabriel'
-        
-        function mostrarNomeNoConsole (nome){
-            console.log(nome)
-        }
-        mostrarNomeNoConsole(nome)
-        let data = new Date();
-        console.log(data);
-    </script>!
 </head>
+
 <body>
-   <h1>10</h1> 
+    <h1 id="name">nome</h1>
+    <h2 id="date">data</h2>
+    <script>
+        // pega uma referência ao elemento <h1>
+        const h1 = document.getElementById("name")
+
+        // cria a variável nome com um nome
+        let nome = 'Gabriel'
+
+        // coloca o nome dentro de h1
+        h1.innerText = nome
+
+        // pega uma referência ao elemento <h2>
+        const h2 = document.getElementById("date")
+
+        // cria uma data
+        let data = new Date();
+
+        // coloca esta data dentro de h2
+        h2.innerText = data
+    </script>
 </body>
+
 </html>
